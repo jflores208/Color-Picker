@@ -7,10 +7,10 @@ function initColorPicker() {
     let rgb = {
         red: document.getElementById("red"),
         green: document.getElementById("green"),
-        blue: {
-            value: 255
-        },
-    };
+        blue: document.getElementById("blue")
+
+
+    }
     let colorPickers = document.getElementsByClassName("picker");
     setColorPickerEventListeners(colorBox ,rgb, colorPickers);
 }
@@ -42,5 +42,5 @@ function setDisplayValues(red, green, blue) {
 
     redVal.innerText = red;
     greenVal.innerText = green;
-    blueVal.innertext= blue;
+    blueVal.innerText= blue;
 }
